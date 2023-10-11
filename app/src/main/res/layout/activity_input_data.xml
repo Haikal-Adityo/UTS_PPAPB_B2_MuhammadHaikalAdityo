@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/CustomTextView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Form untuk Kalori In -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalori In"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerWaktuKaloriIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Kalori In (Sarapan, Lunch, Dinner)"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextNamaMakanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Makanan"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Form untuk Kalori Out -->
+        <EditText
+            android:id="@+id/editTextJumlahKaloriIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Jumlah Kalori"
+            android:inputType="number"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalori Out"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextNamaWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Workout"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textWaktuMulaiWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu Mulai Workout"
+            android:textSize="14sp"/>
+
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextDurasiWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Durasi Workout (menit)"
+            android:inputType="number"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextKaloriTerbakar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kalori Terbakar"
+            android:inputType="number"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Button Simpan dan Kembali -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/green_primary"
+            android:text="Simpan"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_primary"
+            android:text="Kembali ke Home"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NutriCare</string>
+
+    <string-array name="weight_units">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string-array name="tujuan_diet">
+        <item>Cutting</item>
+        <item>Bulking</item>
+        <item>Maintaining</item>
+    </string-array>
+
+    <string-array name="waktu_makan">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+
+</resources>
